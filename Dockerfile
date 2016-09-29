@@ -14,7 +14,7 @@ RUN apk add --no-cache --virtual .builder libarchive-tools && \
                        erlang-parsetools \
                        erlang-eunit \
                        erlang-tools && \
-    curl --location https://github.com/elixir-lang/elixir/releases/download/v1.3.3/Precompiled.zip \
+    curl --location https://github.com/elixir-lang/elixir/releases/download/v1.2.6/Precompiled.zip \
     | bsdtar --extract --file - --directory /usr/local/ && \
     chmod -R +x /usr/local/bin/ && \
     apk del --no-cache .builder
